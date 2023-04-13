@@ -84,3 +84,45 @@ h5,
 .rewards button{
 	border-radius: 5px;
 }
+.left_badge p{
+	border: 1px solid #ccc;
+	border-right: none;
+	padding: 3px;
+	display: initial;
+	position: relative;
+}
+.left_badge p::before{
+	content: "";
+	position: absolute;
+	right: -10px;
+	top: 3px;
+	width: 0;
+	height: 0;
+	border: solid #ccc;
+	border-width: 0 1px 1px 0;
+	border-bottom-right-radius: 5px;
+	padding: 10px;
+	transform: rotate(-45deg);
+}
+.right_badge p{
+	border: 1px solid #ccc;
+	border-left: none;
+	padding: 3px;
+	display: initial;
+	position: relative;
+}
+.right_badge p::before{
+	content: "";
+	position: absolute;
+	left: -10px;
+	top: 2px;
+	width: 0;
+	height: 0;
+	border: solid #ccc;
+	border-width: 1px 0px 0px 1px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 6px;
+	border-top-right-radius: 6px;
+	padding: 11px;
+	transform: rotate(-45deg);
+}
