@@ -4,14 +4,20 @@ div, ul, h1, h3{
 }
 .header{
 	background-color: #1b5589;
-	padding: 5px;
+	padding: 5px 0;
 }
 ul{
 	list-style-type: none;
 }
+.header ul{
+	display: flex;
+}
+.header ul li{
+	margin-right: 5%;
+}
 .header img{
-	width: 50px;
-	height: 50px;
+	width: 60px;
+	height: 60px;
 }
 h1, h3{
 	font-weight: lighter;
@@ -29,9 +35,17 @@ a{
 	border: 1px solid #ccc;
 	border-radius: 5px;
 }
+h5, h4{
+	font-weight: bold;
+}
+.list ul img{
+	float: left;
+	margin-left: 20px;
+	margin-right: 20px;
+}
 .list ul li{
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	display: flow-root;
 }
 .list ul li:nth-child(1){
@@ -65,64 +79,56 @@ a{
 	top: 10px;
 	right: 10px;
 }
-.list ul img{
-	float: left;
-	margin-left: 20px;
-	margin-right: 20px;
-}
-h5, 
-.content h3{
-	font-weight: bold;
-}
 .list button{
 	border-radius: 5px;
 }
+
 .rewards img{
-	width: 44px;
-	height: 44px;
+	width: 34px;
+	height: 34px;
 }
 .rewards button{
 	border-radius: 5px;
 }
 .left_badge p{
 	border: 1px solid #ccc;
+	border-radius: 5px;
 	border-right: none;
-	padding: 3px;
+	padding: 3px 10px;
 	display: initial;
 	position: relative;
 }
 .left_badge p::before{
 	content: "";
 	position: absolute;
-	right: -10px;
-	top: 3px;
+	right: -8px;
+	top: 2px;
 	width: 0;
 	height: 0;
 	border: solid #ccc;
 	border-width: 0 1px 1px 0;
-	border-bottom-right-radius: 5px;
-	padding: 10px;
+	border-radius: 5px;
+	padding: 11px;
 	transform: rotate(-45deg);
 }
 .right_badge p{
 	border: 1px solid #ccc;
+	border-radius: 5px;
 	border-left: none;
-	padding: 3px;
+	padding: 3px 10px;
 	display: initial;
 	position: relative;
 }
 .right_badge p::before{
 	content: "";
 	position: absolute;
-	left: -10px;
+	left: -8px;
 	top: 2px;
 	width: 0;
 	height: 0;
 	border: solid #ccc;
 	border-width: 1px 0px 0px 1px;
-	border-top-left-radius: 5px;
-	border-bottom-left-radius: 6px;
-	border-top-right-radius: 6px;
+	border-radius: 5px;
 	padding: 11px;
 	transform: rotate(-45deg);
 }
